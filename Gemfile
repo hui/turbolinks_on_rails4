@@ -47,3 +47,5 @@ end
 gem "simple_form", "~> 3.0.0.rc"
 gem 'bootstrap-sass'
 gem 'active_link_to'
+
+gem 'rails_12factor'
