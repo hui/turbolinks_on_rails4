@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TurbolinksOnRails4</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container">
+    <ul class="nav nav-pills">
+      <%= active_link_to "Home", root_path, wrap_tag: 'li', :active => :exclusive %>
+      <%= active_link_to "Posts", posts_path, wrap_tag: 'li', :active => :exclusive %>
+    </ul>
+    <%= yield %>
+  </div>
+</body>
+</html>
